@@ -49,4 +49,8 @@
   font-weight: 400;
   line-height: 2;
   z-index: 10;
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
 }
