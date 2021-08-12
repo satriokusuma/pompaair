@@ -1,0 +1,38 @@
+.header {
+  background-color: $color-secondary-light;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: $grid-width;
+  margin: 0 auto;
+  min-height: 10vh;
+
+  &__logo {
+    height: 4.5rem;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin-left: 4rem;
+  }
+  &__link {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+}

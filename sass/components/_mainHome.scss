@@ -1,0 +1,64 @@
+.backgroundMain {
+  background-color: $color-secondary-light;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  width: $grid-width;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 14rem 0 8rem 0;
+
+  @include respond(tab-port) {
+    max-width: 80%;
+    padding: 6rem 4rem;
+  }
+
+  &__heading {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+.wrapperImage {
+  position: absolute;
+  width: 350px;
+  top: 90px;
+  left: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include respond(phone) {
+    width: 150px;
+    top: 450px;
+    left: 70%;
+  }
+
+  @include respond(big-desktop) {
+    width: 500px;
+  }
+
+  &__home {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 0 40px 0 40px;
+    z-index: 10;
+    object-fit: fill;
+    box-shadow: $shadow-primary;
+
+    @include respond(phone) {
+      border-radius: 15px;
+    }
+  }
+}

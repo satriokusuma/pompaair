@@ -1,0 +1,52 @@
+.aboutHeading {
+  flex: 1;
+  padding: 1rem 3vw;
+  position: relative;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+
+  &::before {
+    content: '\201C';
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    line-height: 1;
+    font-size: 16rem;
+    color: $color-grey-light-2;
+    font-family: sans-serif;
+    z-index: 1;
+
+    @include respond(phone) {
+      top: -5rem;
+      left: -3rem;
+    }
+  }
+
+  &::after {
+    content: '\201C';
+    position: absolute;
+    right: 4rem;
+    line-height: 1;
+    font-size: 16rem;
+    color: $color-grey-light-2;
+    font-family: sans-serif;
+    z-index: 1;
+    bottom: 20rem;
+    transform: rotate(180deg);
+
+    @include respond(phone) {
+      bottom: -3rem;
+      right: 1rem;
+    }
+  }
+}
+
+.heading-paragraf-about {
+  font-size: 1.6rem;
+  color: $color-black-light;
+  font-weight: 400;
+  line-height: 2;
+  z-index: 10;
+}

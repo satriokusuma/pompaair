@@ -1,0 +1,20 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/helper';
+@import 'base/typography';
+
+@import 'components/mainHome';
+@import 'components/button';
+@import 'components/aboutHeading';
+@import 'components/aboutPicture';
+@import 'components/pricing';
+@import 'components/services';
+@import 'components/slider';
+
+@import 'layouts/footer';
+@import 'layouts/navigation';
+@import 'layouts/grid';
+
+@import 'pages/home';

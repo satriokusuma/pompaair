@@ -1,0 +1,38 @@
+.sectionMain {
+  min-height: 90vh;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.sectionAbout {
+  padding: 6rem 0 1rem 0;
+
+  @include respond(phone) {
+    padding: 6rem 0 6rem 0;
+  }
+}
+
+.sectionServices {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0;
+  background-color: $color-secondary-light;
+}
+
+.sectionPricing {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+
+.sectionWork {
+  padding: 6rem 3rem;
+  background-color: $color-secondary-light;
+  transition: transform 1s, opacity 1s;
+}
+
+.sectionReview {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0;
+}

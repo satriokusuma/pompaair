@@ -1,0 +1,123 @@
+.pricing {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 4rem 0;
+
+  hr {
+    color: $color-black-light;
+  }
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: $radiusCardSecond;
+    box-shadow: $shadow-secondary;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem 2rem;
+  }
+
+  &__card-header {
+    padding: 2rem 1.25rem 0 1.25rem;
+    text-align: center;
+    margin-bottom: 0;
+
+    h4 {
+      font-size: 1.6rem;
+      font-weight: bolder;
+      color: $color-primary;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+    span {
+      font-size: 1.2rem;
+      color: $color-black-light;
+      font-weight: 500;
+
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__card-heading {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: $color-black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+  }
+
+  &__card-span {
+    font-size: 1.4rem;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  &__card-items {
+    list-style: none;
+    padding: 1rem 0;
+  }
+
+  &__card-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__card-text {
+    font-size: 1.3rem;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__card-icon {
+    text-align: center;
+    margin-right: 1.5rem;
+    fill: $color-primary;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__card-footer {
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+}
+
+.pricingButton {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,54 @@
+.footer {
+  background-color: $color-black;
+  padding: 10rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $color-secondary-light;
+    }
+  }
+
+  &__description {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  &__logo {
+    width: 15%;
+    height: auto;
+  }
+
+  &__social {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__about {
+    flex: 1;
+    padding-right: 2rem;
+    p {
+      font-size: 1.5rem;
+      color: $color-secondary-light;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding-right: 2rem;
+      padding-top: 2rem;
+    }
+  }
+}

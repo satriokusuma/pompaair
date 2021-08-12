@@ -1,0 +1,65 @@
+.btnPrimary {
+  padding: 1.25rem 2rem;
+  outline: none;
+  border: none;
+  background-color: $color-primary;
+  color: $color-white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-secondary-dark;
+    transform: scale(1.1);
+  }
+}
+
+.btnSecondary {
+  padding: 1.25rem 2rem;
+  outline: none;
+  border: none;
+  background-color: $color-black;
+  color: $color-white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-black-light;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: $color-grey-dark-2;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-grey-dark;
+  }
+}
+
+.textLink {
+  color: $color-primary;
+  font-weight: 800;
+  transition: all 0.3s;
+  display: inline-block;
+
+  &:hover {
+    transform: rotate(4deg) scale(1.2);
+    background-color: $color-white;
+    box-shadow: $shadow-primary;
+  }
+}

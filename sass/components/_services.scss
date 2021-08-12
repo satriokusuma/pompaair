@@ -1,0 +1,104 @@
+.container-services {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+
+  @include respond(phone) {
+    width: 80%;
+  }
+}
+
+.headerService {
+  padding-top: 0;
+}
+
+.servicesImg {
+  position: relative;
+  align-self: flex-end;
+
+  &__img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+}
+
+.listService {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 0 0 0;
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+  }
+
+  &__items {
+    background-color: $color-white;
+    box-shadow: $shadow-secondary;
+    border-radius: $radiusCardSecond;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @include respond(phone) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2rem);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__item {
+    padding: 1rem 2rem 3rem 2rem;
+
+    p {
+      font-size: 1.4rem;
+      color: $color-black-light;
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    align-self: center;
+    margin-right: 1.5rem;
+
+    svg {
+      fill: $color-primary;
+    }
+  }
+
+  &__icon svg {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+#map {
+  height: 100%;
+}
