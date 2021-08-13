@@ -37,7 +37,8 @@
     &:hover {
       @include respond(phone) {
         transform: scale(1.1);
-        box-shadow: $shadow-secondary;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+      }
       }
     }
   }
