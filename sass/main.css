@@ -522,6 +522,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 4rem 0 1rem 0;
   }
 }
 
@@ -545,6 +546,15 @@ body {
   transition: all 0.3s;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .pricing__card {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
+
 .pricing__card:not(:last-child) {
   margin-right: 3rem;
 }
@@ -552,17 +562,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .pricing__card:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 4rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .pricing__card:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    margin-bottom: 5rem;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 }
 
@@ -674,12 +673,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .pricingButton {
-    margin-top: 2rem;
-  }
 }
 
 .container-services {

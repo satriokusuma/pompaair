@@ -11,6 +11,7 @@
   @include respond(phone) {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 4rem 0 1rem 0;
   }
 
   &__card {
@@ -25,20 +26,17 @@
     box-shadow: $shadow-secondary;
     transition: all 0.3s;
 
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
     &:not(:last-child) {
       margin-right: 3rem;
 
       @include respond(phone) {
         margin-right: 0;
-        margin-bottom: 4rem;
-      }
-    }
-
-    &:hover {
-      @include respond(phone) {
-        transform: scale(1.1);
-        margin-bottom: 5rem;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       }
     }
   }
@@ -129,8 +127,4 @@
 .pricingButton {
   display: flex;
   justify-content: center;
-
-  @include respond(phone) {
-    margin-top: 2rem;
-  }
 }
