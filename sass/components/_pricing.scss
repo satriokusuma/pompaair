@@ -23,13 +23,21 @@
     background-clip: border-box;
     border-radius: $radiusCardSecond;
     box-shadow: $shadow-secondary;
+    transition: all 0.3s;
 
     &:not(:last-child) {
       margin-right: 3rem;
 
       @include respond(phone) {
         margin-right: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &:hover {
+      @include respond(phone) {
+        transform: scale(1.1);
+        box-shadow: $shadow-secondary;
       }
     }
   }
@@ -120,4 +128,8 @@
 .pricingButton {
   display: flex;
   justify-content: center;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
 }

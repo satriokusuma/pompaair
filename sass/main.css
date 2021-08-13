@@ -327,6 +327,13 @@ body {
 
 .btnSecondary:hover {
   background-color: #5d5d5d;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btnSecondary {
+    font-size: 2rem;
+  }
 }
 
 .btn {
@@ -534,6 +541,8 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .pricing__card:not(:last-child) {
@@ -543,7 +552,16 @@ body {
 @media only screen and (max-width: 37.5em) {
   .pricing__card:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricing__card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }
 
@@ -657,6 +675,12 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .pricingButton {
+    margin-top: 2rem;
+  }
+}
+
 .container-services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,6 +767,15 @@ body {
           transform: translateY(-2rem);
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .listService__items:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
 }
 
 .listService__items p {

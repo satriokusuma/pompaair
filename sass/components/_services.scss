@@ -59,6 +59,11 @@
     &:hover {
       transform: translateY(-2rem);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      @include respond(phone) {
+        transform: scale(1.1);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
     }
 
     p {

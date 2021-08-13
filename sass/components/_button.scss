@@ -30,6 +30,11 @@
 
   &:hover {
     background-color: $color-black-light;
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }
 
