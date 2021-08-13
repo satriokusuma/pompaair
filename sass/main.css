@@ -327,7 +327,6 @@ body {
 
 .btnSecondary:hover {
   background-color: #5d5d5d;
-  font-size: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
