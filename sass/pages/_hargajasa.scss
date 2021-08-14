@@ -1,0 +1,25 @@
+.sectionJasaHarga {
+  min-height: 90vh;
+  position: relative;
+}
+
+.mainJasa {
+  width: $grid-width;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.form {
+  margin-top: 1.25rem;
+}
+
+.form-control {
+  @include respond(phone) {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+}

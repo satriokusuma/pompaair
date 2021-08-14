@@ -18,7 +18,7 @@ html {
   @include respond(tab-port) {
     // width < 900?
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 
   @include respond(big-desktop) {
@@ -26,9 +26,9 @@ html {
   }
 }
 
-body {
-  @include respond(phone) {
-    // width < 1200?
-    overflow-x: hidden;
-  }
-}
+// body {
+//   @include respond(phone) {
+//     // width < 1200?
+//     overflow-x: hidden;
+//   }
+// }

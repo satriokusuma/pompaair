@@ -37,19 +37,12 @@ html {
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
-    overflow-x: hidden;
   }
 }
 
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  body {
-    overflow-x: hidden;
   }
 }
 
@@ -112,6 +105,24 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+.heading-primary-color {
+  font-size: 3.2rem;
+  color: #ff7600;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .heading-primary-color {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-primary-color {
     font-size: 3rem;
     font-weight: 700;
   }
@@ -335,6 +346,37 @@ body {
   }
 }
 
+.btnJasa {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  background-color: #5d5d5d;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnJasa:hover {
+  background-color: #1d1d1d;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btnJasa {
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .btn {
   display: inline-block;
   background-color: #999;
@@ -368,6 +410,170 @@ body {
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.pricingGrid {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4rem 0 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem 1.5rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.pricingGrid hr {
+  color: #5d5d5d;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 22rem 0 4rem 0;
+  }
+}
+
+.pricingGrid__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid__card {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
+
+.pricingGrid__card-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem 2rem;
+}
+
+.pricingGrid__card-header {
+  padding: 2rem 1.25rem 0 1.25rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.pricingGrid__card-header h4 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: #ff7600;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid__card-header h4 {
+    font-size: 2rem;
+  }
+}
+
+.pricingGrid__card-header span {
+  font-size: 1.2rem;
+  color: #5d5d5d;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid__card-header span {
+    font-size: 1.8rem;
+  }
+}
+
+.pricingGrid__card-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #1d1d1d;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid__card-heading {
+    font-size: 4rem;
+  }
+}
+
+.pricingGrid__card-span {
+  font-size: 1.4rem;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.pricingGrid__card-items {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.pricingGrid__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.pricingGrid__card-text {
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricingGrid__card-text {
+    font-size: 1.8rem;
+  }
+}
+
+.pricingGrid__card-icon {
+  text-align: center;
+  margin-right: 1.5rem;
+  fill: #ff7600;
+  height: 2rem;
+  width: 2rem;
+}
+
+.pricingGrid__card-footer {
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+
+.pricingButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aboutHeading {
@@ -499,6 +705,45 @@ body {
   border-radius: 40px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.asideHarga {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 6;
+  background-color: #f9f9fa;
+  padding: 1rem 0 3rem 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.asideHarga__center {
+  width: 110rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .asideHarga__center {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .asideHarga {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 .pricing {
@@ -1257,5 +1502,34 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10rem 0;
+}
+
+.sectionJasaHarga {
+  min-height: 90vh;
+  position: relative;
+}
+
+.mainJasa {
+  width: 110rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.form {
+  margin-top: 1.25rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+  }
 }
 /*# sourceMappingURL=main.css.map */

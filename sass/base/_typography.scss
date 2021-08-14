@@ -20,6 +20,20 @@ body {
   }
 }
 
+.heading-primary-color {
+  font-size: 3.2rem;
+  color: $color-primary;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
 .heading-secondary-color {
   font-size: 2.5rem;
   color: $color-primary;

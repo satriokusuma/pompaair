@@ -37,6 +37,39 @@
   }
 }
 
+.btnJasa {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  background-color: $color-black-light;
+  color: $color-white;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    background-color: $color-black;
+  }
+
+  // &:not(:last-child) {
+  //   margin-right: 1rem;
+  //   margin-bottom: 1rem;
+  // }
+
+  @include respond(phone) {
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .btn {
   display: inline-block;
   background-color: $color-grey-dark-2;
