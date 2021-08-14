@@ -9,6 +9,7 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  overflow-x: hidden;
 
   @include respond(tab-land) {
     // width < 1200?
@@ -18,7 +19,6 @@ html {
   @include respond(tab-port) {
     // width < 900?
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
-    // overflow-x: hidden;
   }
 
   @include respond(big-desktop) {
@@ -26,9 +26,9 @@ html {
   }
 }
 
-// body {
-//   @include respond(phone) {
-//     // width < 1200?
-//     overflow-x: hidden;
-//   }
-// }
+body {
+  @include respond(phone) {
+    // width < 1200?
+    overflow-x: hidden;
+  }
+}
