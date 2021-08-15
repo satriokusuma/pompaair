@@ -1274,22 +1274,18 @@ body {
   }
 }
 
+.related-blog__card a {
+  font-size: 1.4rem;
+  color: #ff7600;
+  font-style: italic;
+}
+
 .related-blog__img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   -o-object-fit: fill;
      object-fit: fill;
   margin-bottom: 2rem;
-}
-
-.related-blog__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .slider {
