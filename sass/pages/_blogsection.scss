@@ -1,0 +1,12 @@
+.sectionBlog {
+  min-height: 90vh;
+  position: relative;
+  width: 110rem;
+  margin: 0 auto;
+  padding: 6rem 0;
+
+  @include respond(phone) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

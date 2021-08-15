@@ -135,6 +135,17 @@ body {
   }
 }
 
+.heading-secondary {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}
+
 .heading-secondary-color {
   font-size: 2.5rem;
   color: #ff7600;
@@ -751,6 +762,113 @@ body {
     right: 0;
     top: 0;
   }
+}
+
+.blog {
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardBlog {
+  background-color: #fff;
+  max-width: 950px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (100px)[3];
+      grid-template-rows: repeat(3, 100px);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cardBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.cardBlog__img {
+  width: 240px;
+  height: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cardBlog__img {
+    width: 100%;
+  }
+}
+
+.cardBlog__body {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cardBlog__body {
+    padding: 30px 0;
+  }
+}
+
+.cardBlog__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cardBlog__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.cardBlog__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardBlog__icon {
+  text-align: center;
+  margin-right: 1.5rem;
+  fill: #5d5d5d;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .pricing {
@@ -1537,6 +1655,21 @@ body {
     overflow-x: scroll;
     position: relative;
     scroll-behavior: smooth;
+  }
+}
+
+.sectionBlog {
+  min-height: 90vh;
+  position: relative;
+  width: 110rem;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sectionBlog {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
