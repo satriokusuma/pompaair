@@ -871,6 +871,12 @@ body {
   width: 1.8rem;
 }
 
+.cardBlog a {
+  font-size: 1.4rem;
+  color: #ff7600;
+  font-style: italic;
+}
+
 .pricing {
   max-width: 100rem;
   margin: 0 auto;
