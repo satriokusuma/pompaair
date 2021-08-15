@@ -10,3 +10,14 @@
     margin: 0 auto;
   }
 }
+
+.single-blog {
+  min-height: 90vh;
+  position: relative;
+  padding: 6rem 0;
+}
+
+.relatedBlog {
+  padding: 6rem 0;
+  background-color: $color-secondary-light;
+}

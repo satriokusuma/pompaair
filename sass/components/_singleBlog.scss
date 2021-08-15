@@ -1,0 +1,70 @@
+.singleBlog {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(phone) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+    object-fit: fill;
+  }
+
+  &__content {
+    font-size: 1.8rem;
+    line-height: 2;
+    padding: 4rem 0;
+    font-weight: 300;
+  }
+}
+
+.related-blog {
+  width: 110rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(phone) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    padding: 4rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 500px;
+    margin-right: 3rem;
+
+    @include respond(phone) {
+      width: auto;
+      margin-bottom: 4rem;
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    margin-bottom: 2rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+}
