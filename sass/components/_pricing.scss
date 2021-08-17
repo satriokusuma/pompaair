@@ -1,17 +1,20 @@
 .pricing {
   max-width: 100rem;
   margin: 0 auto;
-  display: flex;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0;
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
 
   hr {
     color: $color-black-light;
   }
 
   @include respond(phone) {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 4rem 0 1rem 0;
+    grid-template-columns: repeat(1, 1fr);
+    // max-width: 80%;
+    margin: 0 auto;
+    // padding: 22rem 0 4rem 0;
   }
 
   &__card {
@@ -30,14 +33,6 @@
       margin-right: 0;
       margin-bottom: 3rem;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    }
-
-    &:not(:last-child) {
-      margin-right: 3rem;
-
-      @include respond(phone) {
-        margin-right: 0;
-      }
     }
   }
 
@@ -73,7 +68,7 @@
   }
 
   &__card-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: $color-black;
     text-align: center;
@@ -81,7 +76,7 @@
     justify-content: center;
 
     @include respond(phone) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 

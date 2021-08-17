@@ -885,10 +885,12 @@ body {
 .pricing {
   max-width: 100rem;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem 1.5rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .pricing hr {
@@ -897,12 +899,9 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .pricing {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 4rem 0 1rem 0;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
   }
 }
 
@@ -932,16 +931,6 @@ body {
     margin-bottom: 3rem;
     -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  }
-}
-
-.pricing__card:not(:last-child) {
-  margin-right: 3rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .pricing__card:not(:last-child) {
-    margin-right: 0;
   }
 }
 
@@ -984,7 +973,7 @@ body {
 }
 
 .pricing__card-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   color: #292929;
   text-align: center;
@@ -998,7 +987,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .pricing__card-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
