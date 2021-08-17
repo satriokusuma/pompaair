@@ -161,6 +161,11 @@ body {
   color: #5d5d5d;
 }
 
+.heading-four-primary {
+  font-size: 1.8rem;
+  color: #ff7600;
+}
+
 .heading-five {
   font-size: 1.6rem;
   font-weight: 500;
