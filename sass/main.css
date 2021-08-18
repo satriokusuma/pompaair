@@ -53,6 +53,10 @@ html {
   }
 }
 
+body a {
+  text-decoration: none;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -1510,8 +1514,14 @@ body {
 }
 
 .footer__link a {
-  padding-right: 2rem;
-  padding-top: 2rem;
+  padding: 2rem 1rem;
+  text-decoration: none;
+}
+
+.footer__link svg {
+  height: 30px;
+  width: 30px;
+  fill: #ff7600;
 }
 
 .header {

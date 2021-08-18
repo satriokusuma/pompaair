@@ -47,8 +47,13 @@
     align-items: center;
 
     a {
-      padding-right: 2rem;
-      padding-top: 2rem;
+      padding: 2rem 1rem;
+      text-decoration: none;
+    }
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: $color-primary;
     }
   }
 }
